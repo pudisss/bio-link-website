@@ -1,0 +1,562 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    overflow-x: hidden;
+}
+/* Main section starts here */
+section.main-section {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-image: url("../assets/images/backgrouhnd.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+    overflow-x: hidden;
+
+}
+
+.main-section .header {
+    position: relative;
+    top: 1.5rem;
+    left: 4.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.header .first-category {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.header .first-category .categories {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-left: 5.5rem;
+}
+
+.header .first-category .categories div {
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: "Karla";
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-align: right;
+    margin-left: 2.5rem;
+}
+.header .first-category .categories div .number {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.header .second-category {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    column-gap: 30px;
+   margin-right: 6.5rem;
+}
+.header .second-category .login {
+    width: 91px;
+    height: 42px;
+    border: none;
+    background-color: transparent;
+    font-family: "Karla";
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.header .second-category .login:hover {
+    
+    border: 2px white solid;
+    border-radius: 26px;
+    background-color: transparent;
+}
+.header .second-category .signup {
+    width: 91px;
+height: 42px;
+border: 2px white solid;
+background-color: transparent;
+border-radius: 20px;
+font-family: "Karla";
+font-size: 14px;
+font-weight: 700;
+color: white;
+text-transform: uppercase;
+transition: 300ms;
+}
+.header .second-category .signup:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Main section */
+.main {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.main .text {
+    margin-left: 3.5rem;
+    width: 439px;
+height: 341px;
+color: white;
+
+
+}
+
+.main .text span {
+    font-family: "Karla";
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    width: 700px;
+}
+.main .text .different {
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 153, 255, 1);
+    color: rgb(0, 153, 255, 1);
+}
+.main .text .paragraph {
+    font-family: "Karla";
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(125, 133, 152, 1);
+    margin-top: 1.5rem;
+}
+.main .text .search-row {
+    display: flex;
+    align-items: center;
+    margin-top: 1.75rem;
+}
+.main .text .search-row .search {
+    width: 289px;
+height: 52px;
+background-color: #171717;
+border: none;
+border-radius: 28px;
+}
+
+.main .text .search-row .search::placeholder {
+    font-family: "Karla";
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(125, 133, 152, 1);
+    position: relative;
+    left: 15px;
+}
+
+.main .text .search-row .submit {
+    width: 111px;
+height: 52px;
+background-color: #0099FF;
+border: none;
+border-radius: 20px;
+font-family:"Karla";
+font-size: 14px;
+font-weight: 400;
+color: white;
+text-transform: uppercase;
+margin-left: 2.5rem;
+}
+
+/* What you can create section */
+.create {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(32, 32, 32, 1);
+    display: flex;
+    flex-flow: column nowrap;
+    
+
+}
+
+.create .text-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 4.5rem;
+    left: 3.5rem;
+
+}
+.create .text-section .header {
+    font-family: "Karla";
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(211, 211, 211, 1);
+    width: 273px;
+height: 96px;
+}
+.create .text-section .header span {
+    text-decoration: underline;
+    text-decoration-color: rgb(211, 211, 211, 1);
+
+}
+
+.create .text-section .paragraph {
+    font-family: "Karla";
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(125, 133, 152, 1);
+    width: 433px;
+height: 103px;
+}
+
+.create .text-section .start-create {
+    width: 170px;
+height: 52px;
+border: 1px rgb(211, 211, 211, 1) solid;
+background-color: transparent;
+font-family: "Karla";
+font-size: 14px;
+font-weight: 400;
+color: rgb(211, 211, 211, 1);
+transition: .3s;
+}
+.create .text-section .start-create:hover {
+    background-color: rgb(211, 211, 211, 1);
+    color:rgb(32, 32, 32, 1);
+}
+
+.card  {
+    position: relative;
+    top: 15rem;
+    left: 15rem;
+    height: 238px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 293px 293px 293px;
+    grid-template-rows: 95px 95px;
+    grid-template-areas: 
+    "1 2 3"
+    "4 5 6";
+    place-items: center;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+}
+
+.card .block {
+    width: 293px;
+height: 95px;
+border: none;
+background-color: white;
+border-radius: 20px;
+box-shadow: 0px 20px 40px -5px #383838;
+display: flex;
+
+align-items: center;
+justify-content: space-between;
+}
+
+.card .block svg {
+    margin-left: 1.5rem;
+}
+.card .block .text {
+    margin-left: 2.5rem;
+}
+.card .block .text .header {
+    font-family: "Karla";
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+}
+
+.card .block .text .paragraph {
+    font-family: "Karla";
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(125, 133, 152, 1);
+}
+.create .seemore {
+    font-family: "Karla";
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(211, 211, 211, 1);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    top: 50vh;
+    left: 50vw;
+}
+/* Create Edit section */
+section.createedit {
+    width: 100vw;
+    height: 350vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh 100vh 100vh 50vh;
+    grid-template-areas: 
+    "text1 image1"
+    "image2 text2"
+    "text3 image3"
+    "footer footer";
+    
+    
+}
+
+/* Text Section */
+.createedit .text-section1 {
+    grid-area: text1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    
+}
+
+
+.createedit .text-section1 .header {
+    font-family: "Karla";
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    width: 352px;
+height: 144px;
+margin-left: 3.5rem;
+}
+.createedit .text-section1 .header span {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.createedit .text-section1 .paragraph {
+    margin-left: 3.5rem;
+    position: relative;
+    top: 1.5rem;
+    font-family: "Karla";
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(125, 133, 152, 1);
+    width: 433px;
+height: 103px;
+margin-top: 1.5rem;
+}
+
+.createedit .text-section1 .gettingstarted {
+    width: 145px;
+height: 52px;
+border: none;
+border-radius: 26px;
+background-color: #0099FF;
+margin-left: 3.5rem;
+font-family: "Karla";
+font-size: 14px;
+font-weight: 400;
+color: white;
+text-transform: uppercase;
+margin-top: 1.5rem;
+transition: .3s;
+}
+.createedit .text-section1 .gettingstarted:hover {
+    background-color: black;
+    border: 2px #0099FF solid;
+    color: #0099FF;
+}
+
+.createedit .image1 {
+    grid-area: image1;
+    background-image: url("../assets/images/background1.svg");
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.createedit .text-section2 {
+    grid-area: text2;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.createedit .text-section2 .header {
+    font-family: "Karla";
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    width: 386px;
+height: 96px;
+margin-left: 3.5rem;
+}
+
+.createedit .text-section2 .header span {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.createedit .text-section2 .paragraph {
+    font-family: "Karla";
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(125, 133, 152, 1);
+    width: 433px;
+height: 103px;
+margin-top: 1.5rem;
+margin-left: 3.5rem;
+}
+
+.createedit .text-section2 .getstarted {
+    width: 145px;
+height: 52px;
+border: none;
+border-radius: 26px;
+font-family: "Karla";
+font-size: 14px;
+font-weight: 400;
+color: white;
+text-transform: uppercase;
+background-color: #0099FF;
+margin-top: 2.5rem;
+margin-left: 3.5rem;
+transition: .3s;
+
+}
+
+.createedit .text-section2 .getstarted:hover {
+    border: 2px #0099FF solid;
+    background-color: black;
+    color: #0099FF;
+
+}
+.createedit .image2 {
+    grid-area: image2;
+    background-color: rgb(255, 240, 206, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.createedit .text-section3 {
+    grid-area: text3;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.createedit .text-section3 .header {
+    font-family: "Karla";
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    width: 352px;
+height: 192px;
+margin-left: 3.5rem;
+}
+.createedit .text-section3 .header span {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.createedit .text-section3 .paragraph {
+    font-family: "Karla";
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(125, 133, 152, 1);
+    width: 433px;
+height: 103px;
+margin-top: 3.5rem;
+margin-left: 3.5rem;
+}
+.createedit .text-section3 .getstarted {
+    width: 145px;
+height: 52px;
+border: none;
+border-radius: 26px;
+background-color: #0099FF;
+font-family: "Karla";
+font-size: 14px;
+font-weight: 400;
+color: white;
+text-transform: uppercase;
+margin-top: 3.5rem;
+margin-left: 3.5rem;
+transition: .3s;
+}
+.createedit .text-section3 .getstarted:hover {
+    border: 2px #0099FF solid;
+    background-color: black;
+    color: #0099FF;
+}
+.createedit .image3 {
+    grid-area: image3;
+    background-color: rgb(254, 216, 175, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/images/background3.svg");
+    background-repeat: no-repeat;
+    background-position: 70% 60%;
+}
+.createedit .engaging {
+    grid-area: footer;
+    background-color: rgb(32, 32, 32, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.createedit .engaging .text {
+    margin-left: 5.5rem;
+}
+.createedit .engaging .text .header {
+    font-family: "Karla";
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(211, 211, 211, 1);
+    width: 466px;
+height: 96px;
+}
+
+.createedit .engaging .text .paragraph {
+    font-family: "Karla";
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(125, 133, 152, 1);
+    width: 433px;
+height: 50px;
+margin-top: 1.5rem;
+}
+
+.createedit .engaging .startcreating {
+    margin-right: 4.5rem;
+    width: 170px;
+height: 52px;
+border: 1px rgb(211, 211, 211, 1) solid;
+border-radius: 26px;
+background-color: rgb(32, 32, 32, 1);
+font-family: "Karla";
+font-size: 14px;
+font-weight: 400;
+color: rgb(211, 211, 211, 1);
+text-transform: uppercase;
+transition: .3s;
+
+}
+
+.createedit .engaging .startcreating:hover {
+    background-color: rgb(211, 211, 211, 1);
+    color: rgb(32, 32, 32, 1)
+
+}
